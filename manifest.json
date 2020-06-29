@@ -1,0 +1,39 @@
+{
+  "manifest_version": 2,
+  "name": "Alphien Meetings",
+  "description": "A simple extension that allows you to schedule Alphien Meetings.",
+  "version": "1.0",
+  "minimum_chrome_version": "80",
+  "icons": {
+    "16": "alphien-logo-16x16.png",
+    "48": "alphien-logo-48x48.png",
+    "128": "alphien-logo-128x128.png"
+  },
+  "permissions": [
+      "https://calendar.google.com/*"
+  ],
+  "externally_connectable": {
+      "matches": [
+        "*://voip.alphien.com/*"
+      ]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://calendar.google.com/calendar/*", "https://outlook.live.com/owa/*"],
+      "js": ["jquery.js", "RandomUtil.js", "RoomnameGenerator.js", "config.js", "meet-calendar.js"],
+      "css": ["/css/all.css"],
+      "all_frames" : false,
+      "run_at" : "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    "alphien-logo-48x48.png",
+    "alphien-logo-white-48x48.png",
+    "alphien-logo-blue.svg",
+    "alphien-logo-grey.svg"
+  ],
+  "browser_action": {
+    "default_title": "Create Jitsi Meetings",
+    "default_popup": "popup.html"
+  }
+}
