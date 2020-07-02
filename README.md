@@ -24,6 +24,6 @@ To Install Extention :
 3. Choose Pack extension Option
 4. Select the root directory of the extension to pack
 5. The result is a CRX file and, if you do this for the first time, a private key used for later updates.
-6. Drag and drop the '.crx' extension file onto the Extensions page from step 1 ( crx file should likely be in your Downloads directory )
+6. Drag and drop the '.crx' extension file onto the Extensions page from step 5 
 7. Install
 
