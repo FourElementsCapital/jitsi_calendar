@@ -19,7 +19,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://calendar.google.com/calendar/*", "https://outlook.live.com/owa/*"],
+      "matches": ["https://calendar.google.com/calendar/*"],
       "js": ["jquery.js", "RandomUtil.js", "RoomnameGenerator.js", "config.js", "meet-calendar.js"],
       "css": ["/css/all.css"],
       "all_frames" : false,
