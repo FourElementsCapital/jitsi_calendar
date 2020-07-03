@@ -21,9 +21,7 @@ note : if failed to install .crx, please follow instruction installing from scra
 To Install Extention :
 1. Clone this repo : git clone https://github.com/FourElementsCapital/jitsi_calendar.git
 2. Go to chrome://extensions/ and check the box for Developer mode in the top right.
-3. Choose Pack extension Option
+3. Choose Load Unpackage Option
 4. Select the root directory of the extension to pack
-5. The result is a CRX file and, if you do this for the first time, a private key used for later updates.
-6. Drag and drop the '.crx' extension file onto the Extensions page from step 5 
-7. Install
+5. Install
 
